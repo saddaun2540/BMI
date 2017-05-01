@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="49dp"
+            android:text="Men"
+            android:textSize="50dp" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_alignStart="@+id/textView2"
+            android:layout_below="@+id/textView2"
+            android:layout_marginLeft="21dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="63dp"
+            android:ems="10"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/height"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/editText"
+            android:layout_alignRight="@+id/editText"
+            android:layout_below="@+id/editText"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/editText"
+            android:layout_alignBottom="@+id/editText"
+            android:layout_alignLeft="@+id/weight"
+            android:layout_alignStart="@+id/weight"
+            android:text="ส่วนสูง"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/height"
+            android:layout_alignBottom="@+id/height"
+            android:layout_toLeftOf="@+id/editText"
+            android:layout_toStartOf="@+id/editText"
+            android:text="น้ำหนัก"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView2"
+            android:layout_alignRight="@+id/textView2"
+            android:layout_below="@+id/height"
+            android:layout_marginTop="57dp"
+            android:text="BMI" />
+
+        <TextView
+            android:id="@+id/BMI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textSize="35dp" />
+
+        <TextView
+            android:id="@+id/value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/BMI"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="48dp"
+            android:textSize="35dp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_toEndOf="@+id/editText"
+            android:layout_toRightOf="@+id/editText"
+            android:text="ซม."
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="กก."
+            android:textSize="20dp"
+            android:layout_alignBaseline="@+id/height"
+            android:layout_alignBottom="@+id/height"
+            android:layout_toRightOf="@+id/height"
+            android:layout_toEndOf="@+id/height" />
+    </RelativeLayout>
+</LinearLayout>
